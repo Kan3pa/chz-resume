@@ -157,27 +157,35 @@
         }
 
         .first {
-            width: 95%;
+            width: 66%;
         }
 
         .second {
-            width: 80%;
+            width: 100%;
         }
 
         .third {
-            width: 65%;
+            width: 66%;
         }
 
         .fourth {
-            width: 70%;
+            width: 100%;
         }
 
         .fifth {
-            width: 90%;
+            width: 16%;
         }
 
         .sixth {
-            width: 75%;
+            width: 16%;
+        }
+		
+        .seventh {
+            width: 5%;
+        }
+		
+        .eighth {
+            width: 100%;
         }
 
         .experience {
@@ -186,13 +194,14 @@
 
         .experience .box-container {
             display: flex;
+			flex-direction: column;
             flex-wrap: wrap;
         }
 
         .experience .box-container .box {
             padding: 20px;
             border-radius: 5px;
-            flex: 1 1 350px;
+            flex: 1 1 35px;
             background: #eeeeee;
         }
 
@@ -210,7 +219,7 @@
         .experience .box-container .box p {
             color: #777777;
             line-height: 2;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .contact .box-container {
@@ -223,7 +232,7 @@
             display: flex;
         }
 
-        .contact .box-container .box i {
+        .contact .box-container .box i{
             height: 40px;
             width: 40px;
             line-height: 40px;
@@ -257,51 +266,44 @@
     <div class="container">
 
         <div class="profile">
-            <img src="http://nocturne.bczcdn.com/file/1645597751069_39196/head.png" alt="">
-            <h3>Algo</h3>
-            <p>前端开发</p>
+            <img src="https://github.com/Kan3pa/test-resume/blob/main/photo.JPG?raw=true" alt="" width="100px" height="130px">
+            <h3>陈泓照</h3>
+            <p>模型验证岗</p>
             <div class="buttons">
-                <a class="btn" href="http://nocturne.bczcdn.com/audio/1647325026464_87789/小夜简历3.0.pdf" target="_blank">下载简历</a>
-                <a class="btn" href="javascript:alert('发送成功');">发送面试邀请</a>
+                <a class="btn" href="https://github.com/Kan3pa/test-resume/raw/refs/heads/main/Resume.pdf" target="_blank">下载简历</a>
+                <a class="btn" href="#cont"">联系方式</a>
             </div>
         </div>
 
         <div class="information">
 
             <div class="about">
-                <h3 class="title">About Me</h3>
-                <p>我叫Algo，小名是小夜，擅长Python，精通爬虫，可视化，数据分析，人工智能等领域。</p>
-                <p>不仅如此，我还能熟练使用前端语言独立制作电商网站，招聘网站等等，这个简历也是我用HTML和CSS完成的哦。</p>
+                <h3 class="title">个人简介</h3>
+                <p>主要负责信用卡中心业务模型验证、监控，以及内评模型开发优化、部署、持续维护工作</p>
                 <div class="box-container">
                     <div class="box">
-                        <h3><span>年龄 : </span>20</h3>
-                        <h3><span>地址 : </span>四川，成都</h3>
-                        <h3><span>电话 : </span>1234567890</h3>
-                        <h3><span>邮箱 : </span>Algo@Yequ.Com</h3>
+                        <h3><span>年龄 : </span>27</h3>
+                        <h3><span>地址 : </span>广东，广州</h3>
+						<h3><span>毕业院校 : </span>新加坡国立大学</h3>
+						<h3><span>学历 : </span>硕士</h3>
+                        <h3><span>任职单位 : </span>广发银行信用卡中心</h3>
+                        <h3><span>任职部门 : </span>风险管理部-风险模型计量处</h3>
                     </div>
                     <div class="box">
-                        <h3><span>求职 : </span>Web Design</h3>
-                        <h3><span>语言 : </span>Hindi, English</h3>
-                        <h3><span>工龄 : </span>2 年</h3>
+                        <h3><span>求职 : </span>风险类模型开发、模型验证、数据分析相关岗位</h3>
+                        <h3><span>语言 : </span>普通话、粤语、英语(雅思:7)</h3>
+                        <h3><span>工龄 : </span>3 年</h3>
                         <h3><span>现状 : </span>随时到岗</h3>
                     </div>
                 </div>
             </div>
 
             <div class="services">
-                <h3 class="title">My Services</h3>
+                <h3 class="title">专业技能</h3>
                 <div class="imgbox-container">
                     <div class="box">
-                        <img src="http://nocturne.bczcdn.com/file/1645598211806_42022/icon-1.png" alt="">
-                        <h3>HTML 5</h3>
-                    </div>
-                    <div class="box">
-                        <img src="http://nocturne.bczcdn.com/file/1645598216656_89057/icon-2.png" alt="">
-                        <h3>CSS 3</h3>
-                    </div>
-                    <div class="box">
-                        <img src="http://nocturne.bczcdn.com/file/1645598219832_4197/icon-3.png" alt="">
-                        <h3>JavaScript</h3>
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/SAS.png?raw=true" alt="">
+                        <h3>SAS</h3>
                     </div>
                     <div class="box">
                         <img src="http://nocturne.bczcdn.com/file/1645598223509_63268/icon-4.png" alt="">
@@ -312,88 +314,115 @@
                         <h3>SQL</h3>
                     </div>
                     <div class="box">
-                        <img src="http://nocturne.bczcdn.com/file/1645598230253_49248/icon-6.png" alt="">
-                        <h3>C++</h3>
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/Spark.png?raw=true" alt="" >
+                        <h3>Spark</h3>
+                    </div>
+                    <div class="box">
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/R.png?raw=true" alt="" >
+                        <h3>R</h3>
                     </div>
                 </div>
             </div>
 
             <div class="skills">
-                <h3 class="title">My Skills</h3>
+                <h3 class="title">工作经验</h3>
                 <div class="box-container">
                     <div class="box">
                         <div class="progress">
-                            <h3>Html <span>95%</span></h3>
+                            <h3>内评模型开发：23年内评申请评分卡模型以及24年PD分池模型的开发<span>2年</span></h3>
                             <div class="bar"><span class="first"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>Css <span>80%</span></h3>
+                            <h3>模型验证：征信评分、新发卡反欺诈、客户价值等模型的校验 <span>3年</span></h3>
                             <div class="bar"><span class="second"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>Javascript <span>65%</span></h3>
+                            <h3>模型评审：召开2次模型评审会议<span>2年</span></h3>
                             <div class="bar"><span class="third"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>Photoshop <span>70%</span></h3>
+                            <h3>模型监测：行为评分、透现响应、未延滞还款提醒模型的月度监控<span>3年</span></h3>
                             <div class="bar"><span class="fourth"></span></div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="progress">
-                            <h3>Web Design <span>90%</span></h3>
+                            <h3>工具设计：内评分池模型大数据建模工具的开发<span>6个月</span></h3>
                             <div class="bar"><span class="fifth"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>Graphic Design <span>75%</span></h3>
+                            <h3>代码优化：优化各模型校验代码以及月度监控代码，实现报表自动化<span>6个月</span></h3>
                             <div class="bar"><span class="sixth"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>App Design <span>65%</span></h3>
-                            <div class="bar"><span class="third"></span></div>
+                            <h3>电话营销：了解邀请客户办理分期业务的相关话术<span>1个月</span></h3>
+                            <div class="bar"><span class="seventh"></span></div>
                         </div>
                         <div class="progress">
-                            <h3>Digital Marketing <span>70%</span></h3>
-                            <div class="bar"><span class="fourth"></span></div>
+                            <h3>合规保密：负责处室合规、保密自查与相关材料报送 <span>3年</span></h3>
+                            <div class="bar"><span class="eighth"></span></div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="experience">
-                <h3 class="title">My Experience</h3>
+                <h3 class="title">项目经历</h3>
                 <div class="box-container">
                     <div class="box">
-                        <span>2020 - 2022</span>
-                        <h3>前端工程师</h3>
-                        <p>主要负责夜曲优选前端页面开发、适配。</p>
-                        <p></p>
+                        <span>2024.05 - 2024.09</span>
+                        <h3>巴塞尔新资本协议 PD 分池模型开发</h3>
+                        <p>建模样本更新 ：基于行内管理办法与监管要求检视历史取样逻辑，更新样本剔除口径以及目标定义</p>
+						<p>子客群更新 ：分析不同高层池细分方式对预测违约概率的影响，更新部分高层池划分逻辑</p>
+						<p>特征筛选 ：使用保存超过9年的全部可获得信息，基于贪心算法寻找对加权金额 PD 影响较小的变量</p>
+						<p>模型建立 ：在SAS EM对11个子客群拟合CHAID决策树模型，对9年模型结果进行长期平均，并使用成熟性系数、经济衰退系数、以及置信区间上限对模型参数进行调整</p>
+						<p>模型效果： 相较于旧版模型，准确性指标(PE)提升100%，稳定性指标(PSI)提升46%</p>
+                        <p>业务影响 ：反映客户最新时点风险特征，在风险高位实现下游减值以及经济资本应用平稳切换</p>
+						<p></p>
+                    </div>
+                    <div class="box">
+                        <span>2023.10 - 2023.12</span>
+                        <h3>未延滞还款提醒模型验证</h3>
+                        <p>取样代码核验 ：审阅GBIE等关键定义合理性；复现模型，取时间外校验集并检查代码逻辑</p>
+						<p>变量核查与指标分析：检查变量加工过程与业务含义，分析模型性能指标是否符合上线标准</p>
+						<p>验证发现： 部分变量出现穿越并且缺失值填充逻辑与业务含义不符，后续联系开发方进行修正</p>
+						<p>结果汇报： 形成验证文档，对模型材料进行归档整理并向风险部门总经理汇报模型概况与验证结论</p>
+                    </div>
+                    <div class="box">
+                        <span>2023.05 - 2023.08</span>
+                        <h3>内部评级申请评分卡模型开发</h3>
+                        <p>样本及目标选取 ：按照业务逻辑构建入模样本，通过迁徙率、账龄分析等确立好坏定义以及表现期</p>
+						<p>客群划分： 分析风险水平，结合业务经验将样本划分为2个客群(网营电营，直营分行)分别建模</p>
+						<p>变量筛选： 根据聚类结果、IV值等进行变量初筛，WOE粗分箱后进行逐步回归基于显著性复筛变量</p>
+						<p>模型建立： 使用SAS逻辑回归进行拟合建立评分卡模型，生成打分规则</p>
+						<p>模型效果： 2个子模型准确性指标(RRMSE)相比于旧版模型均提升100%；区分能力指标(KS)相比于旧版模型提升42%和22%；稳定性指标(PSI)相比于旧版模型提升79%和 43%</p>
+                        <p>业务贡献： 针对网电客群(两无/仅有人行或学历)，每月进件新增拒绝约 1700 人，影响批核率约 0.4%</p>
                     </div>
                 </div>
             </div>
 
-            <div class="contact">
-                <h3 class="title">Contact Info</h3>
+            <div class="contact" id="cont">
+                <h3 class="title">联系方式</h3>
                 <div class="box-container">
                     <div class="box">
                         <i class="fas fa-map"></i>
                         <div class="info">
                             <h3>微信</h3>
-                            <p>Yequbiancheng</p>
+                            <p>ok-chz</p>
                         </div>
                     </div>
                     <div class="box">
                         <i class="fas fa-phone"></i>
                         <div class="info">
-                            <h3>My Number</h3>
-                            <p>1234567890</p>
+                            <h3>手机号</h3>
+                            <p>18340091359</p>
                         </div>
                     </div>
                     <div class="box">
                         <i class="fas fa-envelope"></i>
                         <div class="info">
-                            <h3>My Email</h3>
-                            <p>Algo@Yequ.Com</p>
+                            <h3>邮箱</h3>
+                            <p>e0572492@u.nus.edu</p>
                         </div>
                     </div>
                 </div>
