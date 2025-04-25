@@ -1,0 +1,434 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding: 100px 6%;
+            background: linear-gradient(to right top, #ff1493, #2980b9);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .profile {
+            padding: 20px 30px;
+            height: 230px;
+            background: #FFFFFF;
+            text-align: center;
+            flex: 1 1 400px;
+            position: sticky;
+            top: 20px;
+            border-right: 2px solid #333333;
+        }
+
+        .profile h3 {
+            font-size: 20px;
+        }
+
+        .profile p {
+            color: #2980b9;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .btn {
+            padding: 7px 20px;
+            border-radius: 5px;
+            background: #2980b9;
+            color: #FFFFFF;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #333333;
+        }
+
+        .information {
+            padding: 20px 30px;
+            flex: 1 1 1000px;
+            background: #FFFFFF; 
+        }
+
+        .title {
+            font-size: 25px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 2;
+            padding-bottom: 10px;
+            color: #777777;
+        }
+
+        .about .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about .box-container .box {
+            flex: 1 1 250px;
+        }
+
+        .about .box-container .box h3 {
+            font-size: 15px;
+            padding: 10px 0;
+            color: #333333;
+        }
+
+        .about .box-container .box h3 span {
+            color: #777777;
+        }
+
+        .services {
+            padding: 20px 0;
+        }
+
+        .imgbox-container {
+            display: flex;
+        }
+
+        .imgbox-container .box {
+            flex: 1 1 17px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 20px;
+            background: #eeeeee;
+            margin-right: 12px;
+        }
+
+        .imgbox-container .box img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .imgbox-container .box h3 {
+            font-size: 15px;
+            color: #777777;
+        }
+
+        .skills .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills .box-container .box {
+            flex: 1 1 300px;
+        }
+
+        .skills .box-container .box:last-child {
+            margin-left: 12px;
+        }
+
+        .progress h3 {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #333333;
+            font-size: 15px;
+        }
+
+        .progress h3 span {
+            color: #777777;
+        }
+
+        .bar {
+            overflow: hidden;
+            border-radius: 50px;
+            height: 10px;
+            background: #eeeeee;
+        }
+
+        .bar span {
+            background: #2980b9;
+            height: 100%;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .first {
+            width: 66%;
+        }
+
+        .second {
+            width: 100%;
+        }
+
+        .third {
+            width: 66%;
+        }
+
+        .fourth {
+            width: 100%;
+        }
+
+        .fifth {
+            width: 16%;
+        }
+
+        .sixth {
+            width: 16%;
+        }
+		
+        .seventh {
+            width: 5%;
+        }
+		
+        .eighth {
+            width: 100%;
+        }
+
+        .experience {
+            margin: 20px 0;
+        }
+
+        .experience .box-container {
+            display: flex;
+			flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .experience .box-container .box {
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1 1 35px;
+            background: #eeeeee;
+        }
+
+        .experience .box-container .box span {
+            color: #2980b9;
+            font-size: 15px;
+        }
+
+        .experience .box-container .box h3 {
+            color: #333333;
+            font-size: 17px;
+            padding: 5px 0;
+        }
+
+        .experience .box-container .box p {
+            color: #777777;
+            line-height: 2;
+            font-size: 15px;
+        }
+
+        .contact .box-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact .box-container .box {
+            flex: 1 1 200px;
+            display: flex;
+        }
+
+        .contact .box-container .box i{
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            border-radius: 50%;
+            background: #2980b9;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        .contact .box-container .box h3 {
+            font-size: 17px;
+            color: #333333;
+            padding-bottom: 5px;
+        }
+
+        .contact .box-container .box p {
+            font-size: 14px;
+            color: #777777;
+            line-height: 2;
+        }
+
+        .info {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="profile">
+            <img src="https://github.com/Kan3pa/test-resume/blob/main/photo.JPG?raw=true" alt="" width="100px" height="130px">
+            <h3>陈泓照</h3>
+            <p>模型验证岗</p>
+            <div class="buttons">
+                <a class="btn" href="https://github.com/Kan3pa/test-resume/raw/refs/heads/main/Resume.pdf" target="_blank">下载简历</a>
+                <a class="btn" href="#cont"">联系方式</a>
+            </div>
+        </div>
+
+        <div class="information">
+
+            <div class="about">
+                <h3 class="title">个人简介</h3>
+                <p>主要负责信用卡中心业务模型验证、监控，以及内评模型开发优化、部署、持续维护工作</p>
+                <div class="box-container">
+                    <div class="box">
+                        <h3><span>年龄 : </span>27</h3>
+                        <h3><span>地址 : </span>广东，广州</h3>
+						<h3><span>毕业院校 : </span>新加坡国立大学</h3>
+						<h3><span>学历 : </span>硕士</h3>
+                        <h3><span>任职单位 : </span>广发银行信用卡中心</h3>
+                        <h3><span>任职部门 : </span>风险管理部-风险模型计量处</h3>
+                    </div>
+                    <div class="box">
+                        <h3><span>求职 : </span>风险类模型开发、模型验证、数据分析相关岗位</h3>
+                        <h3><span>语言 : </span>普通话、粤语、英语(雅思:7)</h3>
+                        <h3><span>工龄 : </span>3 年</h3>
+                        <h3><span>现状 : </span>随时到岗</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+                <h3 class="title">专业技能</h3>
+                <div class="imgbox-container">
+                    <div class="box">
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/SAS.png?raw=true" alt="">
+                        <h3>SAS</h3>
+                    </div>
+                    <div class="box">
+                        <img src="http://nocturne.bczcdn.com/file/1645598223509_63268/icon-4.png" alt="">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="box">
+                        <img src="http://nocturne.bczcdn.com/file/1645598226940_86454/icon-5.png" alt="">
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="box">
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/Spark.png?raw=true" alt="" >
+                        <h3>Spark</h3>
+                    </div>
+                    <div class="box">
+                        <img src="https://github.com/Kan3pa/test-resume/blob/main/R.png?raw=true" alt="" >
+                        <h3>R</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h3 class="title">工作经验</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <div class="progress">
+                            <h3>内评模型开发：23年内评申请评分卡模型以及24年PD分池模型的开发<span>2年</span></h3>
+                            <div class="bar"><span class="first"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>模型验证：征信评分、新发卡反欺诈、客户价值等模型的校验 <span>3年</span></h3>
+                            <div class="bar"><span class="second"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>模型评审：召开2次模型评审会议<span>2年</span></h3>
+                            <div class="bar"><span class="third"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>模型监测：行为评分、透现响应、未延滞还款提醒模型的月度监控<span>3年</span></h3>
+                            <div class="bar"><span class="fourth"></span></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="progress">
+                            <h3>工具设计：内评分池模型大数据建模工具的开发<span>6个月</span></h3>
+                            <div class="bar"><span class="fifth"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>代码优化：优化各模型校验代码以及月度监控代码，实现报表自动化<span>6个月</span></h3>
+                            <div class="bar"><span class="sixth"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>电话营销：了解邀请客户办理分期业务的相关话术<span>1个月</span></h3>
+                            <div class="bar"><span class="seventh"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>合规保密：负责处室合规、保密自查与相关材料报送 <span>3年</span></h3>
+                            <div class="bar"><span class="eighth"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <h3 class="title">项目经历</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <span>2024.05 - 2024.09</span>
+                        <h3>巴塞尔新资本协议 PD 分池模型开发</h3>
+                        <p>建模样本更新 ：基于行内管理办法与监管要求检视历史取样逻辑，更新样本剔除口径以及目标定义</p>
+						<p>子客群更新 ：分析不同高层池细分方式对预测违约概率的影响，更新部分高层池划分逻辑</p>
+						<p>特征筛选 ：使用保存超过9年的全部可获得信息，基于贪心算法寻找对加权金额 PD 影响较小的变量</p>
+						<p>模型建立 ：在SAS EM对11个子客群拟合CHAID决策树模型，对9年模型结果进行长期平均，并使用成熟性系数、经济衰退系数、以及置信区间上限对模型参数进行调整</p>
+						<p>模型效果： 相较于旧版模型，准确性指标(PE)提升100%，稳定性指标(PSI)提升46%</p>
+                        <p>业务影响 ：反映客户最新时点风险特征，在风险高位实现下游减值以及经济资本应用平稳切换</p>
+						<p></p>
+                    </div>
+                    <div class="box">
+                        <span>2023.10 - 2023.12</span>
+                        <h3>未延滞还款提醒模型验证</h3>
+                        <p>取样代码核验 ：审阅GBIE等关键定义合理性；复现模型，取时间外校验集并检查代码逻辑</p>
+						<p>变量核查与指标分析：检查变量加工过程与业务含义，分析模型性能指标是否符合上线标准</p>
+						<p>验证发现： 部分变量出现穿越并且缺失值填充逻辑与业务含义不符，后续联系开发方进行修正</p>
+						<p>结果汇报： 形成验证文档，对模型材料进行归档整理并向风险部门总经理汇报模型概况与验证结论</p>
+                    </div>
+                    <div class="box">
+                        <span>2023.05 - 2023.08</span>
+                        <h3>内部评级申请评分卡模型开发</h3>
+                        <p>样本及目标选取 ：按照业务逻辑构建入模样本，通过迁徙率、账龄分析等确立好坏定义以及表现期</p>
+						<p>客群划分： 分析风险水平，结合业务经验将样本划分为2个客群(网营电营，直营分行)分别建模</p>
+						<p>变量筛选： 根据聚类结果、IV值等进行变量初筛，WOE粗分箱后进行逐步回归基于显著性复筛变量</p>
+						<p>模型建立： 使用SAS逻辑回归进行拟合建立评分卡模型，生成打分规则</p>
+						<p>模型效果： 2个子模型准确性指标(RRMSE)相比于旧版模型均提升100%；区分能力指标(KS)相比于旧版模型提升42%和22%；稳定性指标(PSI)相比于旧版模型提升79%和 43%</p>
+                        <p>业务贡献： 针对网电客群(两无/仅有人行或学历)，每月进件新增拒绝约 1700 人，影响批核率约 0.4%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact" id="cont">
+                <h3 class="title">联系方式</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-map"></i>
+                        <div class="info">
+                            <h3>微信</h3>
+                            <p>ok-chz</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <h3>手机号</h3>
+                            <p>18340091359</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <h3>邮箱</h3>
+                            <p>e0572492@u.nus.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
